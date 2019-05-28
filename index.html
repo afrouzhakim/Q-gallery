@@ -1,0 +1,26 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+    crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">   
+    <script src="gallery.js"></script> 
+</head>
+<body onload="showThumbnailImages()">
+    <div class="container">
+        <div class="header">
+            <h1 class="center align-center">Image Gallery</h1>
+        </div>        
+        <div class = "align-center full-image-frame" onmouseover="showButtons()" onmouseout="hideButtons()">
+            <img class="align-center full-image" id="full-image" src="asset\image\full5.jpg">
+            <div class = "full-image-frame2">
+                <input class="prev" type="button" value="&#10094;" id="prev" name="prev" onclick="goBack()" style="display:none">
+                <input class="next" type="button" value="&#10095;" id="next" name="next" onclick="goNext()" style="display:none">
+                <input class="first" type="button" value="&#10094;&#10094;" id="first" name="prev" onclick="goFirst()" style="display:none">
+                <input class="last" type="button" value="&#10095;&#10095;" id="last" name="next" onclick="goLast()" style="display:none">
+            </div>
+        </div>
+        <p id="Thumbnail" class="thumbnail-container"></p>
+    </div>
+      
+</body>
+

@@ -1,0 +1,191 @@
+@media only screen and (min-width: 768px) {
+  .thumbnail-container {
+      display: block;
+      overflow-x:scroll;
+      overflow-y:hidden;
+      max-width:800px;
+      max-height:200px;
+      margin-right: auto;
+      margin-left: auto;
+  }
+  /*Handling white-space between thumb Images*/
+  .thumbnail-list {
+      white-space:nowrap;
+      list-style: none;
+  }
+  /*Setting a width and height on this element*/
+  .thumbnail-list li {
+      display: inline-block;
+      margin-right: auto;
+      margin-left: auto;
+  }
+  .thumbnail-image {
+      display: block;
+      padding:2px;
+      max-width: 100px;
+      height:100;
+  }
+  /*Design the back ground fram for the Image*/
+  .full-image-frame {
+      background-color: rgb(159, 163, 165);
+      border: 1px solid black; 
+      max-width: 800px;
+      height: 550px;
+      text-align: center;
+      position: relative;
+      margin-top: auto;
+      z-index :1;     
+  }
+  .full-image {
+      display:block;
+      position:absolute;
+      left:0;
+      right:0;
+      bottom:0;
+      top:0;
+      margin:auto;
+  }
+  /*Design the preview and next buttons*/
+  .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 35%;
+      width: auto;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      user-select: none;
+    }
+    .next {
+      right: 0;
+    }
+    .prev {
+      left: 0;
+    }
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+    /*Design the firs and last buttons*/
+    .first, .last {
+      cursor: pointer;
+      position: absolute;
+      top: 55%;
+      width: auto;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      user-select: none;
+    }
+    .last {
+      right: 0;
+    }
+    .first {
+      left: 0;
+    }
+    .first:hover, .last:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+    .align-center {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .center {
+        text-align: center;
+    }
+    .my-slides {
+        display: none;
+    }
+}
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media only print{
+  .thumbnail-container {
+    display :none;
+  }
+  .full-image-frame {
+    background-color: rgb(159, 163, 165);
+    border: 1px solid black; 
+    width: 600px;
+    height: 600px;
+    text-align: center;
+    position: relative;
+    margin-top: auto;     
+  }
+  .full-image {
+    display:block;
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    top:0;
+    margin:auto;
+    max-width: 600px;
+    max-height: 600px;
+  } 
+  .prev, .next {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px){
+  .container{
+    width: 100%;
+  }
+  .header{
+    width: 100%;
+    float: left;
+  }
+  .thumbnail-container {
+    display :none;
+  }
+  .full-image-frame {
+    background-color: rgb(159, 163, 165);
+    border: 1px solid black; 
+    width: 600px;
+    height: 600px;
+    text-align: center;
+    position: relative;
+    margin-top: auto;     
+  }
+  .full-image {
+    display:block;
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    top:0;
+    margin:auto;
+    max-width: 600px;
+    max-height: 600px;
+  } 
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 35%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    user-select: none;
+  }
+  .next {
+    right: 0;
+  }
+  .prev {
+    left: 0;
+  }
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  .first, .last {
+    display: none;
+  }
+  .align-center {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .center {
+    text-align: center;
+  }
+}
