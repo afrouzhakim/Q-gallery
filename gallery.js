@@ -1,3 +1,8 @@
+/**
+ * 
+ * @author Afrouz
+ */
+
 //make thumbnail image bar
 function showThumbnailImages(){
   var images = ["thumb1", "thumb2", "thumb3", "thumb4", "thumb5", "thumb6", "thumb7", "thumb8", "thumb9"]
@@ -8,14 +13,20 @@ function showThumbnailImages(){
   thumbNailsText += "</ul>"
   document.getElementById("Thumbnail").innerHTML = thumbNailsText;  
 }
-//replace image with selected thumbnail Image
+
+/**
+ * Replace image with selected thumbnail Image.
+ */
 function showImage(thumb){
     var src = thumb.getAttribute("src");
     var fullSrc = src.replace("thumb","full");
     var fullImage = document.getElementById ("full-image");
     fullImage.setAttribute("src" , fullSrc);
 }
-//make the button to go to the next image from thumbnail images
+
+/**
+ * make the button to go to the next image from thumbnail images
+ */
 function goNext(){
   var im = document.getElementById("full-image");
   var imAddress = im.getAttribute ("src");
